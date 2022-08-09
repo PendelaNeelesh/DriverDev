@@ -1,1 +1,1 @@
-cmd_/home/neelesh/Desktop/drivercodes/first.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/neelesh/Desktop/drivercodes/first.ko /home/neelesh/Desktop/drivercodes/first.o /home/neelesh/Desktop/drivercodes/first.mod.o;  true
+cmd_/home/neelesh/DriverDev/first.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/neelesh/DriverDev/first.ko /home/neelesh/DriverDev/first.o /home/neelesh/DriverDev/first.mod.o;  true

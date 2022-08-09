@@ -1,8 +1,8 @@
-cmd_/home/neelesh/Desktop/drivercodes/first.mod.o := gcc -Wp,-MMD,/home/neelesh/Desktop/drivercodes/.first.mod.o.d -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/9/include -I./arch/x86/include -I./arch/x86/include/generated -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -Iubuntu/include -include ./include/linux/compiler_types.h -D__KERNEL__ -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -DCONFIG_X86_X32_ABI -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-stack-clash-protection -g -gdwarf-4 -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned -DMODULE -DKBUILD_BASENAME='"first.mod"' -DKBUILD_MODNAME='"first"' -D__KBUILD_MODNAME=kmod_first -c -o /home/neelesh/Desktop/drivercodes/first.mod.o /home/neelesh/Desktop/drivercodes/first.mod.c
+cmd_/home/neelesh/DriverDev/first.mod.o := gcc -Wp,-MMD,/home/neelesh/DriverDev/.first.mod.o.d -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/9/include -I./arch/x86/include -I./arch/x86/include/generated -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -march=core2 -mno-red-zone -mcmodel=kernel -DCONFIG_X86_X32_ABI -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -mfunction-return=thunk-extern -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough=5 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-stack-clash-protection -g -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -Wno-alloc-size-larger-than -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned -DMODULE -DKBUILD_BASENAME='"first.mod"' -DKBUILD_MODNAME='"first"' -D__KBUILD_MODNAME=kmod_first -c -o /home/neelesh/DriverDev/first.mod.o /home/neelesh/DriverDev/first.mod.c
 
-source_/home/neelesh/Desktop/drivercodes/first.mod.o := /home/neelesh/Desktop/drivercodes/first.mod.c
+source_/home/neelesh/DriverDev/first.mod.o := /home/neelesh/DriverDev/first.mod.c
 
-deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
+deps_/home/neelesh/DriverDev/first.mod.o := \
     $(wildcard include/config/MODULE_UNLOAD) \
     $(wildcard include/config/RETPOLINE) \
   include/linux/compiler-version.h \
@@ -23,6 +23,7 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
     $(wildcard include/config/SYSFS) \
     $(wildcard include/config/MODULES_TREE_LOOKUP) \
     $(wildcard include/config/LIVEPATCH) \
+    $(wildcard include/config/STACKTRACE_BUILD_ID) \
     $(wildcard include/config/CFI_CLANG) \
     $(wildcard include/config/MODULE_SIG) \
     $(wildcard include/config/GENERIC_BUG) \
@@ -38,6 +39,7 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
     $(wildcard include/config/FTRACE_MCOUNT_RECORD) \
     $(wildcard include/config/KPROBES) \
     $(wildcard include/config/HAVE_STATIC_CALL_INLINE) \
+    $(wildcard include/config/PRINTK_INDEX) \
     $(wildcard include/config/CONSTRUCTORS) \
     $(wildcard include/config/FUNCTION_ERROR_INJECTION) \
   include/linux/list.h \
@@ -77,7 +79,7 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
     $(wildcard include/config/DEBUG_ATOMIC_SLEEP) \
     $(wildcard include/config/MMU) \
     $(wildcard include/config/PROVE_LOCKING) \
-    $(wildcard include/config/PANIC_TIMEOUT) \
+  include/linux/stdarg.h \
   include/linux/align.h \
   include/linux/limits.h \
   include/uapi/linux/limits.h \
@@ -105,10 +107,13 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
   arch/x86/include/asm/linkage.h \
     $(wildcard include/config/X86_64) \
     $(wildcard include/config/X86_ALIGNMENT_16) \
+    $(wildcard include/config/RETHUNK) \
+    $(wildcard include/config/SLS) \
   include/linux/bitops.h \
   include/linux/bits.h \
   include/vdso/bits.h \
   include/linux/build_bug.h \
+  include/linux/typecheck.h \
   include/uapi/linux/kernel.h \
   include/uapi/linux/sysinfo.h \
   arch/x86/include/asm/bitops.h \
@@ -140,6 +145,7 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
     $(wildcard include/config/X86_INTEL_MEMORY_PROTECTION_KEYS) \
     $(wildcard include/config/X86_5LEVEL) \
     $(wildcard include/config/PAGE_TABLE_ISOLATION) \
+    $(wildcard include/config/CPU_UNRET_ENTRY) \
     $(wildcard include/config/X86_SGX) \
   include/asm-generic/bitops/const_hweight.h \
   include/asm-generic/bitops/instrumented-atomic.h \
@@ -156,6 +162,7 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
   arch/x86/include/uapi/asm/swab.h \
   include/linux/byteorder/generic.h \
   include/asm-generic/bitops/ext2-atomic-setbit.h \
+  include/linux/kstrtox.h \
   include/linux/log2.h \
     $(wildcard include/config/ARCH_HAS_ILOG2_U32) \
     $(wildcard include/config/ARCH_HAS_ILOG2_U64) \
@@ -163,13 +170,13 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
   arch/x86/include/asm/div64.h \
   include/asm-generic/div64.h \
   include/linux/minmax.h \
-  include/linux/typecheck.h \
+  include/linux/panic.h \
+    $(wildcard include/config/PANIC_TIMEOUT) \
   include/linux/printk.h \
     $(wildcard include/config/MESSAGE_LOGLEVEL_DEFAULT) \
     $(wildcard include/config/CONSOLE_LOGLEVEL_DEFAULT) \
     $(wildcard include/config/CONSOLE_LOGLEVEL_QUIET) \
     $(wildcard include/config/EARLY_PRINTK) \
-    $(wildcard include/config/PRINTK_NMI) \
     $(wildcard include/config/PRINTK) \
     $(wildcard include/config/DYNAMIC_DEBUG) \
     $(wildcard include/config/DYNAMIC_DEBUG_CORE) \
@@ -191,8 +198,10 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
     $(wildcard include/config/HZ) \
   include/uapi/asm-generic/param.h \
   include/linux/spinlock_types.h \
-    $(wildcard include/config/DEBUG_SPINLOCK) \
+    $(wildcard include/config/PREEMPT_RT) \
     $(wildcard include/config/DEBUG_LOCK_ALLOC) \
+  include/linux/spinlock_types_raw.h \
+    $(wildcard include/config/DEBUG_SPINLOCK) \
   arch/x86/include/asm/spinlock_types.h \
   include/asm-generic/qspinlock_types.h \
     $(wildcard include/config/NR_CPUS) \
@@ -203,10 +212,7 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
     $(wildcard include/config/LOCKDEP) \
     $(wildcard include/config/LOCK_STAT) \
   include/linux/rwlock_types.h \
-  include/linux/dynamic_debug.h \
-  include/linux/jump_label.h \
-    $(wildcard include/config/HAVE_ARCH_JUMP_LABEL_RELATIVE) \
-  arch/x86/include/asm/jump_label.h \
+  include/linux/once_lite.h \
   include/linux/static_call_types.h \
     $(wildcard include/config/HAVE_STATIC_CALL) \
   include/linux/stat.h \
@@ -225,6 +231,7 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
   include/linux/timex.h \
   include/uapi/linux/timex.h \
   arch/x86/include/asm/timex.h \
+    $(wildcard include/config/X86_TSC) \
   arch/x86/include/asm/processor.h \
     $(wildcard include/config/X86_VMX_FEATURE_NAMES) \
     $(wildcard include/config/X86_IOPL_IOPERM) \
@@ -288,16 +295,18 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
   arch/x86/include/asm/sparsemem.h \
     $(wildcard include/config/SPARSEMEM) \
     $(wildcard include/config/NUMA_KEEP_MEMINFO) \
+  include/asm-generic/pgtable-nop4d.h \
   arch/x86/include/asm/nospec-branch.h \
+    $(wildcard include/config/DEBUG_ENTRY) \
+    $(wildcard include/config/CPU_IBPB_ENTRY) \
   include/linux/static_key.h \
+  include/linux/jump_label.h \
+    $(wildcard include/config/HAVE_ARCH_JUMP_LABEL_RELATIVE) \
+  arch/x86/include/asm/jump_label.h \
   include/linux/objtool.h \
   arch/x86/include/asm/msr-index.h \
   arch/x86/include/asm/unwind_hints.h \
   arch/x86/include/asm/orc_types.h \
-  arch/x86/include/asm/proto.h \
-  arch/x86/include/uapi/asm/ldt.h \
-  arch/x86/include/uapi/asm/sigcontext.h \
-  arch/x86/include/asm/current.h \
   arch/x86/include/asm/percpu.h \
     $(wildcard include/config/X86_64_SMP) \
   include/asm-generic/percpu.h \
@@ -307,6 +316,11 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
     $(wildcard include/config/BASE_SMALL) \
   include/linux/percpu-defs.h \
     $(wildcard include/config/DEBUG_FORCE_WEAK_PER_CPU) \
+  arch/x86/include/asm/GEN-for-each-reg.h \
+  arch/x86/include/asm/proto.h \
+  arch/x86/include/uapi/asm/ldt.h \
+  arch/x86/include/uapi/asm/sigcontext.h \
+  arch/x86/include/asm/current.h \
   arch/x86/include/asm/page.h \
   arch/x86/include/asm/page_64.h \
     $(wildcard include/config/DEBUG_VIRTUAL) \
@@ -314,7 +328,6 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
     $(wildcard include/config/X86_VSYSCALL_EMULATION) \
   include/linux/range.h \
   include/asm-generic/memory_model.h \
-    $(wildcard include/config/DISCONTIGMEM) \
     $(wildcard include/config/SPARSEMEM_VMEMMAP) \
   include/linux/pfn.h \
   include/asm-generic/getorder.h \
@@ -344,25 +357,20 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
   arch/x86/include/asm/cmpxchg.h \
   arch/x86/include/asm/cmpxchg_64.h \
   arch/x86/include/asm/atomic64_64.h \
-  include/linux/atomic-arch-fallback.h \
+  include/linux/atomic/atomic-arch-fallback.h \
     $(wildcard include/config/GENERIC_ATOMIC64) \
-  include/asm-generic/atomic-instrumented.h \
-  include/asm-generic/atomic-long.h \
+  include/linux/atomic/atomic-long.h \
+  include/linux/atomic/atomic-instrumented.h \
   include/linux/bug.h \
     $(wildcard include/config/BUG_ON_DATA_CORRUPTION) \
   arch/x86/include/asm/bug.h \
     $(wildcard include/config/DEBUG_BUGVERBOSE) \
   include/linux/instrumentation.h \
-    $(wildcard include/config/DEBUG_ENTRY) \
   include/asm-generic/bug.h \
     $(wildcard include/config/BUG) \
     $(wildcard include/config/GENERIC_BUG_RELATIVE_POINTERS) \
   arch/x86/include/uapi/asm/msr.h \
   include/linux/tracepoint-defs.h \
-  arch/x86/include/asm/paravirt.h \
-    $(wildcard include/config/PARAVIRT_SPINLOCKS) \
-  arch/x86/include/asm/frame.h \
-    $(wildcard include/config/FRAME_POINTER) \
   arch/x86/include/asm/special_insns.h \
   include/linux/irqflags.h \
     $(wildcard include/config/TRACE_IRQFLAGS) \
@@ -378,7 +386,6 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
   include/uapi/linux/personality.h \
   include/linux/err.h \
   arch/x86/include/asm/tsc.h \
-    $(wildcard include/config/X86_TSC) \
   arch/x86/include/asm/cpufeature.h \
     $(wildcard include/config/X86_FEATURE_NAMES) \
   include/vdso/time32.h \
@@ -387,42 +394,33 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
     $(wildcard include/config/MULTIUSER) \
     $(wildcard include/config/USER_NS) \
   include/linux/highuid.h \
-  include/linux/kmod.h \
-  include/linux/umh.h \
-  include/linux/gfp.h \
-    $(wildcard include/config/HIGHMEM) \
-    $(wildcard include/config/ZONE_DMA) \
-    $(wildcard include/config/ZONE_DMA32) \
-    $(wildcard include/config/ZONE_DEVICE) \
-    $(wildcard include/config/NUMA) \
-    $(wildcard include/config/PM_SLEEP) \
-    $(wildcard include/config/CONTIG_ALLOC) \
-    $(wildcard include/config/CMA) \
-  include/linux/mmdebug.h \
-    $(wildcard include/config/DEBUG_VM) \
-    $(wildcard include/config/DEBUG_VM_PGFLAGS) \
-  include/linux/mmzone.h \
-    $(wildcard include/config/FORCE_MAX_ZONEORDER) \
-    $(wildcard include/config/MEMORY_ISOLATION) \
-    $(wildcard include/config/ZSMALLOC) \
-    $(wildcard include/config/SHADOW_CALL_STACK) \
-    $(wildcard include/config/SWAP) \
-    $(wildcard include/config/TRANSPARENT_HUGEPAGE) \
+  include/linux/buildid.h \
+    $(wildcard include/config/CRASH_CORE) \
+  include/linux/mm_types.h \
+    $(wildcard include/config/HAVE_ALIGNED_STRUCT_PAGE) \
     $(wildcard include/config/MEMCG) \
-    $(wildcard include/config/MEMORY_HOTPLUG) \
-    $(wildcard include/config/COMPACTION) \
-    $(wildcard include/config/FLAT_NODE_MEM_MAP) \
-    $(wildcard include/config/PAGE_EXTENSION) \
-    $(wildcard include/config/DEFERRED_STRUCT_PAGE_INIT) \
-    $(wildcard include/config/HAVE_MEMORYLESS_NODES) \
-    $(wildcard include/config/NEED_MULTIPLE_NODES) \
-    $(wildcard include/config/SPARSEMEM_EXTREME) \
-    $(wildcard include/config/HAVE_ARCH_PFN_VALID) \
-    $(wildcard include/config/HOLES_IN_ZONE) \
+    $(wildcard include/config/USERFAULTFD) \
+    $(wildcard include/config/SWAP) \
+    $(wildcard include/config/NUMA) \
+    $(wildcard include/config/HAVE_ARCH_COMPAT_MMAP_BASES) \
+    $(wildcard include/config/MEMBARRIER) \
+    $(wildcard include/config/AIO) \
+    $(wildcard include/config/MMU_NOTIFIER) \
+    $(wildcard include/config/TRANSPARENT_HUGEPAGE) \
+    $(wildcard include/config/NUMA_BALANCING) \
+    $(wildcard include/config/ARCH_WANT_BATCHED_UNMAP_TLB_FLUSH) \
+    $(wildcard include/config/HUGETLB_PAGE) \
+    $(wildcard include/config/IOMMU_SUPPORT) \
+  include/linux/mm_types_task.h \
+    $(wildcard include/config/SPLIT_PTLOCK_CPUS) \
+    $(wildcard include/config/ARCH_ENABLE_SPLIT_PMD_PTLOCK) \
+  arch/x86/include/asm/tlbbatch.h \
+  include/linux/auxvec.h \
+  include/uapi/linux/auxvec.h \
+  arch/x86/include/uapi/asm/auxvec.h \
   include/linux/spinlock.h \
     $(wildcard include/config/PREEMPTION) \
   include/linux/preempt.h \
-    $(wildcard include/config/PREEMPT_RT) \
     $(wildcard include/config/PREEMPT_COUNT) \
     $(wildcard include/config/TRACE_PREEMPT_TOGGLE) \
     $(wildcard include/config/PREEMPT_NOTIFIERS) \
@@ -434,6 +432,7 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
     $(wildcard include/config/HARDENED_USERCOPY) \
   include/linux/restart_block.h \
   arch/x86/include/asm/thread_info.h \
+    $(wildcard include/config/FRAME_POINTER) \
     $(wildcard include/config/COMPAT) \
   include/linux/bottom_half.h \
   include/linux/lockdep.h \
@@ -450,6 +449,9 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
   include/asm-generic/mmiowb.h \
     $(wildcard include/config/MMIOWB) \
   arch/x86/include/asm/spinlock.h \
+  arch/x86/include/asm/paravirt.h \
+    $(wildcard include/config/PARAVIRT_SPINLOCKS) \
+  arch/x86/include/asm/frame.h \
   arch/x86/include/asm/qspinlock.h \
   include/asm-generic/qspinlock.h \
   arch/x86/include/asm/qrwlock.h \
@@ -487,43 +489,8 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
     $(wildcard include/config/INLINE_WRITE_UNLOCK_IRQ) \
     $(wildcard include/config/INLINE_READ_UNLOCK_IRQRESTORE) \
     $(wildcard include/config/INLINE_WRITE_UNLOCK_IRQRESTORE) \
-  include/linux/wait.h \
-  include/uapi/linux/wait.h \
-  include/linux/numa.h \
-    $(wildcard include/config/NODES_SHIFT) \
-  include/linux/seqlock.h \
-  include/linux/mutex.h \
-    $(wildcard include/config/MUTEX_SPIN_ON_OWNER) \
-    $(wildcard include/config/DEBUG_MUTEXES) \
-  include/linux/osq_lock.h \
-  include/linux/debug_locks.h \
-  include/linux/ww_mutex.h \
-    $(wildcard include/config/DEBUG_WW_MUTEX_SLOWPATH) \
-  include/linux/nodemask.h \
-  include/linux/pageblock-flags.h \
-    $(wildcard include/config/HUGETLB_PAGE) \
-    $(wildcard include/config/HUGETLB_PAGE_SIZE_VARIABLE) \
-  include/linux/page-flags-layout.h \
-    $(wildcard include/config/KASAN_HW_TAGS) \
-    $(wildcard include/config/NUMA_BALANCING) \
-  include/generated/bounds.h \
-  include/linux/mm_types.h \
-    $(wildcard include/config/HAVE_ALIGNED_STRUCT_PAGE) \
-    $(wildcard include/config/USERFAULTFD) \
-    $(wildcard include/config/HAVE_ARCH_COMPAT_MMAP_BASES) \
-    $(wildcard include/config/MEMBARRIER) \
-    $(wildcard include/config/AIO) \
-    $(wildcard include/config/MMU_NOTIFIER) \
-    $(wildcard include/config/ARCH_WANT_BATCHED_UNMAP_TLB_FLUSH) \
-    $(wildcard include/config/IOMMU_SUPPORT) \
-  include/linux/mm_types_task.h \
-    $(wildcard include/config/SPLIT_PTLOCK_CPUS) \
-    $(wildcard include/config/ARCH_ENABLE_SPLIT_PMD_PTLOCK) \
-  arch/x86/include/asm/tlbbatch.h \
-  include/linux/auxvec.h \
-  include/uapi/linux/auxvec.h \
-  arch/x86/include/uapi/asm/auxvec.h \
   include/linux/rbtree.h \
+  include/linux/rbtree_types.h \
   include/linux/rcupdate.h \
     $(wildcard include/config/PREEMPT_RCU) \
     $(wildcard include/config/TINY_RCU) \
@@ -537,18 +504,24 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
     $(wildcard include/config/TREE_RCU) \
     $(wildcard include/config/DEBUG_OBJECTS_RCU_HEAD) \
     $(wildcard include/config/PROVE_RCU) \
-    $(wildcard include/config/RCU_BOOST) \
     $(wildcard include/config/ARCH_WEAK_RELEASE_ACQUIRE) \
   include/linux/rcutree.h \
   include/linux/rwsem.h \
     $(wildcard include/config/RWSEM_SPIN_ON_OWNER) \
     $(wildcard include/config/DEBUG_RWSEMS) \
+  include/linux/osq_lock.h \
   include/linux/completion.h \
   include/linux/swait.h \
+  include/linux/wait.h \
+  include/uapi/linux/wait.h \
   include/linux/uprobes.h \
     $(wildcard include/config/UPROBES) \
   arch/x86/include/asm/uprobes.h \
   include/linux/notifier.h \
+  include/linux/mutex.h \
+    $(wildcard include/config/MUTEX_SPIN_ON_OWNER) \
+    $(wildcard include/config/DEBUG_MUTEXES) \
+  include/linux/debug_locks.h \
   include/linux/srcu.h \
     $(wildcard include/config/TINY_SRCU) \
     $(wildcard include/config/SRCU) \
@@ -575,21 +548,58 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
   include/linux/rcu_node_tree.h \
     $(wildcard include/config/RCU_FANOUT) \
     $(wildcard include/config/RCU_FANOUT_LEAF) \
+  include/linux/page-flags-layout.h \
+    $(wildcard include/config/KASAN_HW_TAGS) \
+  include/linux/numa.h \
+    $(wildcard include/config/NODES_SHIFT) \
+  include/generated/bounds.h \
+  include/linux/seqlock.h \
+  include/linux/ww_mutex.h \
+    $(wildcard include/config/DEBUG_RT_MUTEXES) \
+    $(wildcard include/config/DEBUG_WW_MUTEX_SLOWPATH) \
+  include/linux/rtmutex.h \
   arch/x86/include/asm/mmu.h \
     $(wildcard include/config/MODIFY_LDT_SYSCALL) \
+  include/linux/kmod.h \
+  include/linux/umh.h \
+  include/linux/gfp.h \
+    $(wildcard include/config/HIGHMEM) \
+    $(wildcard include/config/ZONE_DMA) \
+    $(wildcard include/config/ZONE_DMA32) \
+    $(wildcard include/config/ZONE_DEVICE) \
+    $(wildcard include/config/PM_SLEEP) \
+    $(wildcard include/config/CONTIG_ALLOC) \
+    $(wildcard include/config/CMA) \
+  include/linux/mmdebug.h \
+    $(wildcard include/config/DEBUG_VM) \
+    $(wildcard include/config/DEBUG_VM_PGFLAGS) \
+  include/linux/mmzone.h \
+    $(wildcard include/config/FORCE_MAX_ZONEORDER) \
+    $(wildcard include/config/MEMORY_ISOLATION) \
+    $(wildcard include/config/ZSMALLOC) \
+    $(wildcard include/config/SHADOW_CALL_STACK) \
+    $(wildcard include/config/MEMORY_HOTPLUG) \
+    $(wildcard include/config/COMPACTION) \
+    $(wildcard include/config/PAGE_EXTENSION) \
+    $(wildcard include/config/DEFERRED_STRUCT_PAGE_INIT) \
+    $(wildcard include/config/HAVE_MEMORYLESS_NODES) \
+    $(wildcard include/config/SPARSEMEM_EXTREME) \
+    $(wildcard include/config/HAVE_ARCH_PFN_VALID) \
+  include/linux/nodemask.h \
+  include/linux/pageblock-flags.h \
+    $(wildcard include/config/HUGETLB_PAGE_SIZE_VARIABLE) \
   include/linux/page-flags.h \
     $(wildcard include/config/ARCH_USES_PG_UNCACHED) \
     $(wildcard include/config/MEMORY_FAILURE) \
-    $(wildcard include/config/IDLE_PAGE_TRACKING) \
+    $(wildcard include/config/PAGE_IDLE_FLAG) \
     $(wildcard include/config/THP_SWAP) \
     $(wildcard include/config/KSM) \
+  include/linux/local_lock.h \
+  include/linux/local_lock_internal.h \
   include/linux/memory_hotplug.h \
     $(wildcard include/config/ARCH_HAS_ADD_PAGES) \
     $(wildcard include/config/HAVE_ARCH_NODEDATA_EXTENSION) \
-    $(wildcard include/config/HAVE_BOOTMEM_INFO_NODE) \
     $(wildcard include/config/MEMORY_HOTREMOVE) \
-  arch/x86/include/asm/mmzone.h \
-  arch/x86/include/asm/mmzone_64.h \
   include/linux/topology.h \
     $(wildcard include/config/USE_PERCPU_NUMA_NODE_ID) \
     $(wildcard include/config/SCHED_SMT) \
@@ -601,12 +611,6 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
   arch/x86/include/asm/topology.h \
     $(wildcard include/config/SCHED_MC_PRIO) \
     $(wildcard include/config/ACPI_CPPC_LIB) \
-  arch/x86/include/asm/mpspec.h \
-    $(wildcard include/config/EISA) \
-    $(wildcard include/config/X86_MPPARSE) \
-  arch/x86/include/asm/mpspec_def.h \
-  arch/x86/include/asm/x86_init.h \
-  arch/x86/include/asm/apicdef.h \
   include/asm-generic/topology.h \
   include/linux/sysctl.h \
     $(wildcard include/config/SYSCTL) \
@@ -686,6 +690,6 @@ deps_/home/neelesh/Desktop/drivercodes/first.mod.o := \
     $(wildcard include/config/MGEODEGX1) \
     $(wildcard include/config/MGEODE_LX) \
 
-/home/neelesh/Desktop/drivercodes/first.mod.o: $(deps_/home/neelesh/Desktop/drivercodes/first.mod.o)
+/home/neelesh/DriverDev/first.mod.o: $(deps_/home/neelesh/DriverDev/first.mod.o)
 
-$(deps_/home/neelesh/Desktop/drivercodes/first.mod.o):
+$(deps_/home/neelesh/DriverDev/first.mod.o):

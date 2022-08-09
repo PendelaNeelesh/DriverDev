@@ -1,9 +1,5 @@
-obj-m := first.o
-
-KERNELDIR ?= /lib/modules/$(shell uname -r)/build
-
-all default: modules
-install: modules_install
-
-modules modules_install help clean:
-	$(MAKE) -C $(KERNELDIR) M=$(shell pwd) $@
+obj-m:=first.o
+all:
+	make -C $(shell pwd)/../WSL2-Linux-Kernel M=$(shell pwd) modules
+clean:
+	make -C $(shell pwd)/../WSL2-Linux-Kernel M=$(shell pwd) clean
