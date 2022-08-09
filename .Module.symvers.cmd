@@ -1,0 +1,1 @@
+cmd_/home/neelesh/Desktop/drivercodes/Module.symvers := sed 's/\.ko$$/\.o/' /home/neelesh/Desktop/drivercodes/modules.order | scripts/mod/modpost -m -a  -o /home/neelesh/Desktop/drivercodes/Module.symvers -e -i Module.symvers   -T -
