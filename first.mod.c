@@ -29,6 +29,7 @@ static const struct modversion_info ____versions[]
 __used __section("__versions") = {
 	{ 0xba70279b, "module_layout" },
 	{ 0x5b8239ca, "__x86_return_thunk" },
+	{ 0x91d1acb8, "current_task" },
 	{ 0x92997ed8, "_printk" },
 	{ 0xbdfb6dbb, "__fentry__" },
 };
@@ -36,4 +37,4 @@ __used __section("__versions") = {
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "1B8CE94658402E33C95110E");
+MODULE_INFO(srcversion, "491FCB52783F58A1FC05B82");
